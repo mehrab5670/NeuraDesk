@@ -36,7 +36,7 @@ class NeuraDeskApp:
 
         self._configure_styles()
         self._build_ui()
-        self._append_message("NeuraDesk", "سلام! من NeuraDesk هستم. می‌تونم باهات گفت‌وگو کنم، متن رو خلاصه یا تحلیل کنم و گفتگوها رو ذخیره کنم.\n\nبرای شروع پیام بنویس یا از ابزارهای سمت راست استفاده کن.", "assistant")
+        self._append_message("NeuraDesk", "سلام! من هوش مصنویی هستم. می‌تونم باهات گفت‌وگو کنم، متن رو خلاصه یا تحلیل کنم و گفتگوها رو ذخیره کنم.\n\nبرای شروع پیام بنویس یا از ابزارهای سمت راست استفاده کن.", "assistant")
         self._refresh_sessions()
         self._set_status("آماده‌ام")
 
@@ -55,7 +55,7 @@ class NeuraDeskApp:
         header = tk.Frame(self.root, bg=BG, padx=18, pady=14)
         header.pack(fill="x")
         tk.Label(header, text="NeuraDesk", bg=BG, fg=TEXT, font=("Segoe UI", 19, "bold")).pack(side="left")
-        tk.Label(header, text="دستیار چت و پردازش متن", bg=BG, fg=MUTED, font=("Segoe UI", 10)).pack(side="left", padx=12)
+        tk.Label(header, text=" Mehrabدستیار چت و پردازش متن", bg=BG, fg=MUTED, font=("Segoe UI", 10)).pack(side="left", padx=12)
         self.status = tk.Label(header, text="", bg=BG, fg=GREEN, font=("Segoe UI", 9))
         self.status.pack(side="right")
         self._button(header, "تنظیم هوش مصنوعی آنلاین", self.open_ai_settings, fill=False, secondary=True).pack(side="right", padx=10)
