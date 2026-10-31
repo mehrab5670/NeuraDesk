@@ -10,7 +10,7 @@ from database import ChatDatabase
 from text_tools import analyze_text, summarize_text, clean_text
 
 
-BG = "#11131a"
+BG = "#8e94aa"
 PANEL = "#191c26"
 PANEL_2 = "#202432"
 TEXT = "#edf0f7"
